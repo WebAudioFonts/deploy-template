@@ -1,0 +1,31 @@
+{
+  "name": "deploy-template",
+  "version": "1.0.0",
+  "description": "WebAudioFonts deploy template",
+  "keywords": [
+    "webaudiofonts",
+    "deploy",
+    "template"
+  ],
+  "homepage": "https://github.com/WebAudioFonts/deploy-template#readme",
+  "bugs": {
+    "url": "https://github.com/WebAudioFonts/deploy-template/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebAudioFonts/deploy-template.git"
+  },
+  "license": "MIT",
+  "author": "Maxime Larrivée-Roy",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "convert": "node ./scripts/convert.js",
+    "catalog": "node ./scripts/catalog.js",
+    "build": "npm run convert && npm run catalog"
+  },
+  "dependencies": {
+    "sf2-json": "^1.2.0"
+  },
+  "devDependencies": {}
+}
